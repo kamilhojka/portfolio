@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "@/styles/globals.css";
 import { fontSans, fontSerif } from "@/constants/fonts";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -14,8 +15,14 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <body className={(fontSans.variable, fontSerif.variable)}>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSerif.variable,
+          fontSans.variable
+        )}
+      >
         {children}
       </body>
     </html>
