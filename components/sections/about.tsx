@@ -4,8 +4,8 @@ export function About() {
   return (
     <SectionHeading title="About me" id="about">
       <div className="flex flex-col lg:flex-row gap-8">
-        <div className="flex flex-col text-xl text-justify gap-4 justify-center">
-          <h3 className="text-xl">
+        <div className="flex flex-col text-lg text-justify gap-4 justify-center">
+          <h3 className="text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </h3>
           <p className="text-muted-foreground">

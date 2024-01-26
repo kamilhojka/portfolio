@@ -15,7 +15,7 @@ const ImageProperties = {
 export function ContactMe() {
   return (
     <div className="flex flex-col mt-24 gap-8">
-      <h4 className="text-xl font-medium text-center text-muted-foreground">
+      <h4 className="text-lg font-medium text-center text-muted-foreground">
         If you have questions? Or maybe you want to cooperate?
       </h4>
       <Link

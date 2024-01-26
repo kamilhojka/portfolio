@@ -5,7 +5,7 @@ export function Projects() {
     <SectionHeading title="Projects" id="projects" justify="end">
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="flex flex-col text-xl text-justify gap-4 justify-center">
-          <h3 className="text-xl">
+          <h3 className="text-lg text-muted-foreground">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
