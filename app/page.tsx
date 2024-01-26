@@ -1,10 +1,9 @@
-import { ThemeButton } from "@/components/common/theme-button";
+import { Hero } from "@/components/sections/hero";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <ThemeButton />
-      <p>Home</p>
-    </main>
+    <div className="container relative min-h-screen flex flex-col gap-12 w-full">
+      <Hero />
+    </div>
   );
 }
