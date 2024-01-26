@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import { fontSans, fontSerif } from "@/constants/fonts";
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/common/theme-provider";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -23,7 +24,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontSans.variable
         )}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
