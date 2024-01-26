@@ -2,8 +2,7 @@ import { ThemeButton } from "@/components/common/theme-button";
 
 export function Hero() {
   return (
-    <section id="hero" className="relative flex flex-col py-12 px-6 sm:px-12">
-      <ThemeButton />
+    <section id="hero" className="relative flex flex-col py-12">
       <h2 className="text-3xl md:text-4xl font-medium tracking-tighter gap-2">
         Hi, my name is Kamil
         <span className="font-black text-primary">.</span>

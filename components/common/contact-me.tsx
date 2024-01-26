@@ -3,6 +3,7 @@ import Image from "next/image";
 import ContactMeLightSVG from "@/public/assets/contactme.svg";
 import ContactMeDarkSVG from "@/public/assets/contactme-dark.svg";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const ImageProperties = {
   width: 960,
@@ -17,8 +18,9 @@ export function ContactMe() {
       <h4 className="text-xl font-medium text-center text-muted-foreground">
         If you have questions? Or maybe you want to cooperate?
       </h4>
-      <a
+      <Link
         aria-label="Contact Me"
+        href="/contact"
         className="inline-flex relative cursor-pointer"
       >
         <Image
@@ -45,7 +47,7 @@ export function ContactMe() {
             ImageProperties.animation
           )}
         />
-      </a>
+      </Link>
     </div>
   );
 }
