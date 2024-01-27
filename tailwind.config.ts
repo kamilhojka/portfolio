@@ -66,10 +66,15 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        forward: {
+          from: { "margin-left": "1.5rem" },
+          to: { "margin-left": "0rem" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        forward: "forward 1s ease-in-out infinite alternate",
       },
     },
   },
