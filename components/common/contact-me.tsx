@@ -9,7 +9,7 @@ const ImageProperties = {
   width: 960,
   height: 104,
   animation:
-    "bg-left-bottom bg-gradient-to-r from-foreground to-foreground bg-[length:0%_8px] bg-no-repeat hover:bg-[length:100%_8px] duration-500 ease-in-out pb-4",
+    "bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_8px] bg-no-repeat hover:bg-[length:100%_8px] duration-500 ease-in-out pb-4",
 };
 
 export function ContactMe() {

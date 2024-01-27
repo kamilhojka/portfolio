@@ -20,6 +20,7 @@ const buttonVariants = cva(
         glass: "hover:bg-primary hover:text-primary-foreground",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        "link-without-hover": "text-primary",
       },
       size: {
         default: "h-9 px-4 py-2",
