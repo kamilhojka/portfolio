@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
+import { Contact } from "@/components/sections/contact";
 
 export default function ContactPage() {
   return (
@@ -10,7 +11,8 @@ export default function ContactPage() {
           Home
         </Button>
       </Link>
-      Contact page
+
+      <Contact />
     </div>
   );
 }
