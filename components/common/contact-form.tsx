@@ -1,7 +1,11 @@
 "use client";
 
-import { zodResolver } from "@hookform/resolvers/zod";
+import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { useForm as useFormSpree } from "@formspree/react";
+import { useRouter } from "next/navigation";
+import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 
 import { Button } from "@/components/ui/button";
@@ -14,10 +18,16 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 import { contactSchema } from "@/schemas/contact-schema";
 
 export function ContactForm() {
+  const router = useRouter();
+  const [formSpreeState, sendToFormSpree] = useFormSpree(
+    process.env.NEXT_PUBLIC_FORMSPREE_ID as string
+  );
+
   const form = useForm<z.infer<typeof contactSchema>>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -28,8 +38,14 @@ export function ContactForm() {
   });
 
   function onSubmit(values: z.infer<typeof contactSchema>) {
-    console.log(values);
+    sendToFormSpree(values);
   }
+
+  useEffect(() => {
+    if (formSpreeState.succeeded) {
+      router.push("/contact/success");
+    }
+  }, [formSpreeState]);
 
   return (
     <Form {...form}>
@@ -73,8 +89,17 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button size="lg" type="submit">
-          Send Message
+        {formSpreeState.errors?.getFormErrors() && (
+          <Alert variant="destructive">
+            <ExclamationTriangleIcon className="h-4 w-4" />
+            <AlertTitle>Error</AlertTitle>
+            <AlertDescription>
+              There was an error submitting the form. Please try again.
+            </AlertDescription>
+          </Alert>
+        )}
+        <Button size="lg" type="submit" disabled={formSpreeState.submitting}>
+          {formSpreeState.submitting ? "Sending..." : "Send Message"}
         </Button>
       </form>
     </Form>
