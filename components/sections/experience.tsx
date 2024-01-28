@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 
 export function Experience() {
   return (
-    <SectionHeading title="Experience" id="Experience">
+    <SectionHeading title="Experience" id="experience">
       <div className="flex flex-wrap flex-col gap-4">
         <div className="flex justify-between">
           <h4 className="text-xl font-bold">Idźczak-Meble</h4>

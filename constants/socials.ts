@@ -16,4 +16,8 @@ export const SOCIALS: Social[] = [
     name: "Twitter",
     url: "https://twitter.com/kamilhojka/",
   },
+  {
+    name: "Mail",
+    url: "mailto:hello%40kamilhojka.com",
+  },
 ];
