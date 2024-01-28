@@ -41,8 +41,8 @@ export function About() {
             ))}
           </ul>
           <p className="text-muted-foreground">
-            I'm looking for new positions where I can combine my love of code.
-            If you think you have an offer I might like, let's{" "}
+            I&apos;m looking for new positions where I can combine my love of
+            code. If you think you have an offer I might like, let&apos;s{" "}
             <Link
               href="/contact"
               className="text-foreground bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] duration-500 ease-in-out"
