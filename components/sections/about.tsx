@@ -20,7 +20,7 @@ export function About() {
             responsible for software for warehouse management, finances and
             other ERP processes in one of the companies in my city. Thanks to
             this, I gained extensive experience and skills that I will be happy
-            to use in new professional challenges. In addition, he is a gym
+            to use in new professional challenges. In addition, I am a gym
             enthusiast, and I train regularly to stay in good physical and
             mental shape.
           </p>
@@ -53,12 +53,12 @@ export function About() {
           </p>
         </div>
         <div className="flex justify-center lg:justify-end items-start">
-          <picture className="w-[300px] h-[300px] rounded border-primary border-4 bg-primary">
+          <picture className="w-[350px] h-[350px] rounded border-primary border-4 bg-primary">
             <Image
               src="/assets/images/profile-picture.jpg"
               alt="Profile photo"
-              width={300}
-              height={300}
+              width={350}
+              height={350}
               className="opacity-80 grayscale transition-all duration-800 ease-in-out hover:opacity-100 hover:grayscale-0"
               objectFit="contain"
               objectPosition="right"

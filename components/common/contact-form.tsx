@@ -45,7 +45,7 @@ export function ContactForm() {
     if (formSpreeState.succeeded) {
       router.push("/contact/success");
     }
-  }, [formSpreeState]);
+  }, [formSpreeState, router]);
 
   return (
     <Form {...form}>
