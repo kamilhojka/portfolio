@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import fs from "fs";
 import Link from "next/link";
 import Markdown from "markdown-to-jsx";
@@ -12,6 +13,9 @@ import { ContactMe } from "@/components/common/contact-me";
 const getProjectContent = (slug: string) => {
   const folder = "content/";
   const file = `${folder}${slug}.md`;
+  if (!fs.existsSync(file)) {
+    return null;
+  }
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
   return matterResult;
@@ -27,6 +31,10 @@ export const generateStaticParams = async () => {
 export default function ProjectPage(props: any) {
   const slug = props.params.slug;
   const project = getProjectContent(slug);
+
+  if (!project) {
+    return notFound();
+  }
 
   return (
     <div className="flex flex-1 flex-col w-full sm:px-12 gap-8">
