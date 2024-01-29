@@ -1,5 +1,11 @@
+import { Metadata } from "next";
+
 import { Contact } from "@/components/sections/contact";
 import { GoBackHomeButton } from "@/components/common/go-back-home-button";
+
+export const metadata: Metadata = {
+  title: "Contact",
+};
 
 export default function ContactPage() {
   return (

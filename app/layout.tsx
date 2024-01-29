@@ -8,7 +8,10 @@ import { ThemeProvider } from "@/components/common/theme-provider";
 import { Nav } from "@/components/common/nav";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: {
+    template: "%s | Kamil Hojka",
+    default: "Kamil Hojka",
+  },
   description: "It's my portfolio",
 };
 

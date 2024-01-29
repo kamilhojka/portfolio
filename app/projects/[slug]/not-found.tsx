@@ -1,4 +1,10 @@
+import { Metadata } from "next";
+
 import { GoBackHomeButton } from "@/components/common/go-back-home-button";
+
+export const metadata: Metadata = {
+  title: "Project not found",
+};
 
 export default function ProjectPage() {
   return (

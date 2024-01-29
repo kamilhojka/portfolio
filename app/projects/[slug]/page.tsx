@@ -15,6 +15,7 @@ import { getProjectMetadata } from "@/lib/projects";
 import { GoBackHomeButton } from "@/components/common/go-back-home-button";
 import { Heading } from "@/components/common/heading";
 import { Icon } from "@/components/common/icon";
+import { Metadata, ResolvingMetadata } from "next";
 
 const getProjectContent = (slug: string) => {
   const folder = "content/";
@@ -34,7 +35,20 @@ export const generateStaticParams = async () => {
   }));
 };
 
-export default function ProjectPage(props: any) {
+type Props = {
+  params: { slug: string };
+};
+
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const slug = props.params.slug;
+  const project = getProjectContent(slug);
+
+  return {
+    title: project?.data.title,
+  };
+}
+
+export default function ProjectPage(props: Props) {
   const slug = props.params.slug;
   const project = getProjectContent(slug);
 
