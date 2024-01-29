@@ -6,7 +6,7 @@ export function Projects() {
   const projectsMetadata = getProjectMetadata();
 
   return (
-    <SectionHeading title="Projects" id="projects" justify="end">
+    <SectionHeading title="Projects" id="projects" align="end">
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {projectsMetadata.map((project) => (

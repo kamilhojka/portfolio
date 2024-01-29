@@ -5,10 +5,11 @@ import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 
 import { Badge } from "@/components/ui/badge";
+import { ContactMe } from "@/components/common/contact-me";
 import { getProjectMetadata } from "@/lib/projects";
 import { GoBackHomeButton } from "@/components/common/go-back-home-button";
+import { Heading } from "@/components/common/heading";
 import { Icon } from "@/components/common/icon";
-import { ContactMe } from "@/components/common/contact-me";
 
 const getProjectContent = (slug: string) => {
   const folder = "content/";
@@ -40,10 +41,7 @@ export default function ProjectPage(props: any) {
     <div className="flex flex-1 flex-col w-full sm:px-12 gap-8">
       <GoBackHomeButton />
       <div className="flex flex-col gap-8">
-        <h2 className="flex items-end text-6xl lg:text-7xl font-bold font-serif">
-          {project.data.title}
-          <span className="block rounded-full w-3 h-3 bg-blue-300" />
-        </h2>
+        <Heading title={project.data.title} />
         <div className="flex flex-wrap gap-2 items-center">
           {project.data.githubUrl && (
             <Link
