@@ -12,7 +12,7 @@ export function Hero() {
         </h1>
       </div>
       <p className="max-w-2xl text-lg text-muted-foreground text-justify pt-8">
-        I&apos;ve spent the last 4 years building, managing and scaling
+        I&apos;ve spent the last 3.5 years building, managing and scaling
         softwares for company in the furniture industry. After graduation, I am
         trying to find a job where I will be able to use my experience in a new
         environment and find professional fulfillment.
