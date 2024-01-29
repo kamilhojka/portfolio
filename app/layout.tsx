@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { fontMono, fontSans, fontSerif } from "@/constants/fonts";
 import { Footer } from "@/components/sections/footer";
 import { ThemeProvider } from "@/components/common/theme-provider";
-import { ThemeButton } from "@/components/common/theme-button";
+import { Nav } from "@/components/common/nav";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           disableTransitionOnChange
         >
           <div className="container relative min-h-screen flex flex-col w-full">
-            <ThemeButton />
+            <Nav />
             {children}
             <Footer />
           </div>
