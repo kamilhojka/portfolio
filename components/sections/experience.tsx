@@ -23,7 +23,7 @@ export function Experience() {
           WAPRO MAG and FAKiR and other applications through API integration.
           Maintain network infrastructure and SQL Server databases.
           Additionally, proficient in developing applications for older
-          operating systems on handheld devices, such as Windows CE 3.5. Provide
+          operating systems on handheld devices, such as Windows CE 6.0. Provide
           assistance in managing Prestashop and Wordpress store platforms.
         </p>
         <div className="flex flex-wrap gap-4">
