@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import { Badge } from "@/components/ui/badge";
 import { ProjectMetadata } from "@/lib/projects";
-import { Badge } from "../ui/badge";
 
 export function PostPreview(props: ProjectMetadata) {
   return (

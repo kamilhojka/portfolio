@@ -1,5 +1,5 @@
+import { ContactForm } from "@/components/common/contact-form";
 import { SectionHeading } from "@/components/common/section-heading";
-import { ContactForm } from "../common/contact-form";
 
 export function Contact() {
   const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
