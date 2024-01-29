@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
-import { fontSans, fontSerif } from "@/constants/fonts";
+import { fontMono, fontSans, fontSerif } from "@/constants/fonts";
 import { Footer } from "@/components/sections/footer";
-import { ThemeButton } from "@/components/common/theme-button";
 import { ThemeProvider } from "@/components/common/theme-provider";
+import { ThemeButton } from "@/components/common/theme-button";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -23,7 +23,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSerif.variable,
-          fontSans.variable
+          fontSans.variable,
+          fontMono.variable
         )}
       >
         <ThemeProvider
@@ -32,7 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           enableSystem
           disableTransitionOnChange
         >
-          <div className="container relative min-h-screen flex flex-col gap-12 w-full">
+          <div className="container relative min-h-screen flex flex-col w-full">
             <ThemeButton />
             {children}
             <Footer />
