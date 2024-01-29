@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section id="hero" className="relative flex flex-col py-12">
+    <section id="hero" className="relative flex flex-col pb-12">
       <div className="flex flex-col gap-4">
         <h2 className="text-3xl md:text-4xl font-medium tracking-tighter">
           Hi, my name is Kamil
