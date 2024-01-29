@@ -7,12 +7,12 @@ import { ProjectMetadata } from "@/lib/projects";
 export function PostPreview(props: ProjectMetadata) {
   return (
     <Link href={`/projects/${props.slug}`}>
-      <div className="relative h-[200px] lg:h-fit overflow-hidden rounded-md border-2 dark:border-primary-foreground hover:border-primary group transition-all duration-800 ease-in-out">
+      <div className="relative h-[200px] lg:h-fit overflow-hidden rounded-md border-2 dark:border-primary-foreground hover:dark:border-primary hover:border-primary group transition-all duration-800 ease-in-out">
         <div className="absolute inset-0 -z-10 lg:static">
           <Image
             src={props.image}
             alt={props.imageAlt}
-            className="object-cover object-center opacity-30 dark:opacity-10 transition-all duration-800 ease-in-out grayscale lg:group-hover:opacity-80 group-hover:opacity-20 group-hover:grayscale-0"
+            className="object-cover object-center opacity-30 dark:opacity-10 transition-all duration-800 ease-in-out grayscale lg:group-hover:opacity-100 group-hover:opacity-20 group-hover:grayscale-0"
             width={1000}
             height={2000}
           />
