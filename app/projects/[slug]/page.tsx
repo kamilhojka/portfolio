@@ -65,6 +65,11 @@ export default function ProjectPage(props: any) {
               <span className="sr-only">External Link</span>
             </Link>
           )}
+          {project.data.purpose && (
+            <Badge className="w-fit h-fit" variant="reverse-group">
+              {project.data.purpose}
+            </Badge>
+          )}
           {project.data.technologies.map((technology: string, id: number) => (
             <Badge variant="outline" key={id}>
               {technology}
