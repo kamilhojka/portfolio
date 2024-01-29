@@ -6,6 +6,7 @@ export interface ProjectMetadata {
   slug: string;
   title: string;
   purpose: string;
+  purposeContent: string;
   technologies: string[];
   liveUrl: string;
   githubUrl: string;
@@ -27,6 +28,7 @@ export function getProjectMetadata(): ProjectMetadata[] {
       slug: matterResult.data.slug,
       title: matterResult.data.title,
       purpose: matterResult.data.purpose,
+      purposeContent: matterResult.data.purposeContent,
       technologies: matterResult.data.technologies,
       liveUrl: matterResult.data.liveUrl,
       githubUrl: matterResult.data.githubUrl,

@@ -1,8 +1,10 @@
 ---
+order: 1
 slug: "portfolio"
 title: "Portfolio"
 purpose: "Personal"
-technologies: ["Next.js", "React", "TailwindCSS", "shadcn/ui"]
+purposeContent: "This is for personal purposes"
+technologies: ["Next.js", "React", "TailwindCSS", "Radix"]
 liveUrl: ""
 githubUrl: "https://github.com/kamilhojka/portfolio"
 image: "/assets/content/portfolio/image.png"

@@ -1,7 +1,9 @@
 ---
+order: 4
 slug: "upholstery-location-app"
 title: "Upholstery Location App"
 purpose: "Work"
+purposeContent: "It was made for work purposes"
 technologies: ["C#", ".NET", "WPF", "XAML", "SQL Server"]
 liveUrl: ""
 githubUrl: ""

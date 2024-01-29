@@ -1,7 +1,9 @@
 ---
+order: 5
 slug: "3d-warehouse-map"
 title: "3D Warehouse Map"
 purpose: "Work"
+purposeContent: "It was made for work purposes"
 technologies: ["C#", ".NET", "WPF", "XAML", "SQL Server"]
 liveUrl: ""
 githubUrl: ""

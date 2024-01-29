@@ -4,6 +4,11 @@ import Link from "next/link";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 import { Badge } from "@/components/ui/badge";
 import { ContactMe } from "@/components/common/contact-me";
 import { getProjectMetadata } from "@/lib/projects";
@@ -66,9 +71,17 @@ export default function ProjectPage(props: any) {
             </Link>
           )}
           {project.data.purpose && (
-            <Badge className="w-fit h-fit" variant="reverse-group">
-              {project.data.purpose}
-            </Badge>
+            <HoverCard openDelay={300}>
+              <HoverCardTrigger>
+                <Badge
+                  className="w-fit h-fit cursor-help"
+                  variant="reverse-group"
+                >
+                  {project.data.purpose}
+                </Badge>
+              </HoverCardTrigger>
+              <HoverCardContent>{project.data.purposeContent}</HoverCardContent>
+            </HoverCard>
           )}
           {project.data.technologies.map((technology: string, id: number) => (
             <Badge variant="outline" key={id}>

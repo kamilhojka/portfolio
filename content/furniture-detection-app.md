@@ -1,7 +1,9 @@
 ---
+order: 3
 slug: "furniture-detection-app"
 title: "Furniture Detection App"
 purpose: "University"
+purposeContent: "It was made for my master's thesis"
 technologies: ["Python", "YOLOv8", "Streamlit"]
 liveUrl: ""
 githubUrl: "https://github.com/kamilhojka/furniture-detection-yolov8-streamlit"
