@@ -60,8 +60,6 @@ export function About() {
               width={350}
               height={350}
               className="opacity-80 grayscale transition-all duration-800 ease-in-out hover:opacity-100 hover:grayscale-0"
-              objectFit="contain"
-              objectPosition="right"
             />
           </picture>
         </div>
