@@ -1,9 +1,9 @@
 import Image from "next/image";
-
-import ContactMeLightSVG from "@/public/assets/contactme.svg";
-import ContactMeDarkSVG from "@/public/assets/contactme-dark.svg";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
+
+import { cn } from "@/lib/utils";
+import ContactMeDarkSVG from "/public/assets/svg/contactme-dark.svg";
+import ContactMeLightSVG from "/public/assets/svg/contactme.svg";
 
 const ImageProperties = {
   width: 960,
@@ -14,7 +14,7 @@ const ImageProperties = {
 
 export function ContactMe() {
   return (
-    <section id="contact-me" className="flex flex-col mt-24 gap-8">
+    <section id="contact-me" className="flex flex-col py-12 gap-8">
       <h4 className="text-lg font-medium text-center text-muted-foreground">
         If you have questions? Or maybe you want to cooperate?
       </h4>

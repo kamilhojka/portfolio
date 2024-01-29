@@ -1,11 +1,18 @@
 import { cloneElement } from "react";
-import { FaGithub, FaLinkedin, FaXTwitter, FaEnvelope } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaXTwitter,
+  FaEnvelope,
+  FaArrowUpRightFromSquare,
+} from "react-icons/fa6";
 
 const iconMap: Record<string, JSX.Element> = {
   GitHub: <FaGithub />,
   LinkedIn: <FaLinkedin />,
   Twitter: <FaXTwitter />,
   Mail: <FaEnvelope />,
+  ExternalLink: <FaArrowUpRightFromSquare />,
 };
 
 interface IconProps {
