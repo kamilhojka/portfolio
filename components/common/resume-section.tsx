@@ -12,7 +12,7 @@ export function ResumeSection() {
 
   return (
     <>
-      <p className="text-sm text-muted-foreground/80 tracking-tighter">
+      <p className="text-sm text-[#535455] tracking-tighter">
         AVAILABLE FOR WORK
       </p>
       <ResumeButton />
