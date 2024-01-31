@@ -32,7 +32,7 @@ export function ContactMe() {
           loading="lazy"
           className={cn(
             "w-full transition-all rotate-0 scale-100 dark:-rotate-90 dark:scale-0",
-            ImageProperties.animation
+            ImageProperties.animation,
           )}
         />
         <Image
@@ -44,7 +44,7 @@ export function ContactMe() {
           loading="lazy"
           className={cn(
             "absolute w-full transition-all rotate-90 scale-0 dark:rotate-0 dark:scale-100",
-            ImageProperties.animation
+            ImageProperties.animation,
           )}
         />
       </Link>

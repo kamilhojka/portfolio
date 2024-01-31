@@ -25,7 +25,7 @@ import { contactSchema } from "@/schemas/contact-schema";
 export function ContactForm() {
   const router = useRouter();
   const [formSpreeState, sendToFormSpree] = useFormSpree(
-    process.env.NEXT_PUBLIC_FORMSPREE_ID as string
+    process.env.NEXT_PUBLIC_FORMSPREE_ID as string,
   );
 
   const form = useForm<z.infer<typeof contactSchema>>({

@@ -33,7 +33,7 @@ export function About() {
                 key={id}
                 className={cn(
                   "text-muted-foreground text-sm",
-                  "before:content-['•'] before:mr-2 before:text-primary before:leading-3"
+                  "before:content-['•'] before:mr-2 before:text-primary before:leading-3",
                 )}
               >
                 {skill.name}

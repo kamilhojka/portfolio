@@ -29,7 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           "min-h-screen bg-background font-sans antialiased",
           fontSerif.variable,
           fontSans.variable,
-          fontMono.variable
+          fontMono.variable,
         )}
       >
         <ThemeProvider
