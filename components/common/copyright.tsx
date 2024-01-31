@@ -3,10 +3,10 @@ import Link from "next/link";
 export function Copyright() {
   return (
     <div className="flex flex-col gap-2">
-      <h2 className="text-2xl sm:text-4xl font-medium tracking-tight text-primary-foreground">
+      <h4 className="text-2xl sm:text-4xl font-medium tracking-tight text-primary-foreground">
         <span className="font-semibold">© 2024</span> Kamil Hojka
-      </h2>
-      <h4 className="text-xs sm:max-w-xs md:max-w-sm lg:max-w-lg font-medium text-justify text-primary-foreground/80">
+      </h4>
+      <p className="text-xs sm:max-w-xs md:max-w-sm lg:max-w-lg font-medium text-justify text-primary-foreground/80">
         Crafted in{" "}
         <Link
           href="https://figma.com/"
@@ -58,7 +58,7 @@ export function Copyright() {
           </span>
         </Link>
         .
-      </h4>
+      </p>
     </div>
   );
 }

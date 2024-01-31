@@ -12,9 +12,9 @@ export function ResumeSection() {
 
   return (
     <>
-      <h2 className="text-sm text-muted-foreground/80 tracking-tighter">
+      <p className="text-sm text-muted-foreground/80 tracking-tighter">
         AVAILABLE FOR WORK
-      </h2>
+      </p>
       <ResumeButton />
     </>
   );

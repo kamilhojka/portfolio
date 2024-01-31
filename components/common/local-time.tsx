@@ -18,7 +18,7 @@ export function LocalTime() {
       <span className="text-lg font-medium tracking-tighter text-[#1c1c1c]">
         Local time
       </span>
-      <a className="text-lg tracking-tighter text-primary-foreground cursor-default group transition-all duration-300 ease-in-out">
+      <p className="text-lg tracking-tighter text-primary-foreground cursor-default group transition-all duration-300 ease-in-out">
         <span className="bg-left-bottom bg-gradient-to-r from-primary-foreground to-primary-foreground bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
           <Suspense key={hydrated ? "local" : "utc"}>
             <time dateTime={new Date(date).toISOString()}>
@@ -27,7 +27,7 @@ export function LocalTime() {
             </time>
           </Suspense>
         </span>
-      </a>
+      </p>
     </div>
   );
 }
