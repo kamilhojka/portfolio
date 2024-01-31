@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { ResumeButton } from "./resume-button";
+import { ResumeButton } from "@/components/common/resume-button";
 
 export function ResumeSection() {
   const pathname = usePathname();
