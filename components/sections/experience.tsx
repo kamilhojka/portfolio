@@ -5,7 +5,7 @@ export function Experience() {
   return (
     <SectionHeading title="Experience" id="experience">
       <div className="flex flex-wrap flex-col gap-4">
-        <div className="flex justify-between">
+        <div className="flex flex-wrap justify-between">
           <h3 className="text-xl font-bold">Idźczak-Meble</h3>
           <span className="text-lg">June 2019 - December 2023</span>
         </div>
