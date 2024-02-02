@@ -33,7 +33,7 @@ export function About() {
                 key={id}
                 className={cn(
                   "text-muted-foreground text-sm",
-                  "before:content-['•'] before:mr-2 before:text-primary before:leading-3",
+                  "before:content-['•'] before:mr-2 before:text-primary before:leading-3"
                 )}
               >
                 {skill.name}
@@ -53,7 +53,7 @@ export function About() {
           </p>
         </div>
         <div className="flex justify-center lg:justify-end items-start">
-          <picture className="w-[350px] h-[350px] rounded border-primary border-4 bg-primary">
+          <picture className="w-[350px] h-fit rounded border-primary border-4 bg-primary">
             <Image
               src="/assets/images/profile-picture.jpg"
               alt="Profile photo"
