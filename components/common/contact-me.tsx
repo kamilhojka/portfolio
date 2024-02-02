@@ -15,9 +15,9 @@ const ImageProperties = {
 export function ContactMe() {
   return (
     <section id="contact-me" className="flex flex-col py-12 gap-8">
-      <h4 className="text-lg font-medium text-center text-muted-foreground">
+      <p className="text-lg font-medium text-center text-muted-foreground">
         If you have questions? Or maybe you want to cooperate?
-      </h4>
+      </p>
       <Link
         aria-label="Contact Me"
         href="/contact"
@@ -32,7 +32,7 @@ export function ContactMe() {
           loading="lazy"
           className={cn(
             "w-full transition-all rotate-0 scale-100 dark:-rotate-90 dark:scale-0",
-            ImageProperties.animation,
+            ImageProperties.animation
           )}
         />
         <Image
@@ -44,7 +44,7 @@ export function ContactMe() {
           loading="lazy"
           className={cn(
             "absolute w-full transition-all rotate-90 scale-0 dark:rotate-0 dark:scale-100",
-            ImageProperties.animation,
+            ImageProperties.animation
           )}
         />
       </Link>
