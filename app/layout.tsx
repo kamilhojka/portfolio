@@ -9,6 +9,7 @@ import { Footer } from "@/components/sections/footer";
 import { ThemeProvider } from "@/components/common/theme-provider";
 import { Nav } from "@/components/common/nav";
 import { Noise } from "@/components/common/noise";
+import { SmoothScroller } from "@/components/common/smooth-scroller";
 
 export const metadata: Metadata = {
   title: {
@@ -30,7 +31,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           "min-h-screen bg-background font-sans antialiased",
           fontSerif.variable,
           fontSans.variable,
-          fontMono.variable,
+          fontMono.variable
         )}
       >
         <ThemeProvider
@@ -39,12 +40,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
           enableSystem
           disableTransitionOnChange
         >
-          <Noise />
-          <div className="container relative min-h-screen flex flex-col w-full">
-            <Nav />
-            {children}
-            <Footer />
-          </div>
+          <SmoothScroller>
+            <Noise />
+            <div className="container relative min-h-screen flex flex-col w-full">
+              <Nav />
+              {children}
+              <Footer />
+            </div>
+          </SmoothScroller>
         </ThemeProvider>
         <Analytics />
         <SpeedInsights />
