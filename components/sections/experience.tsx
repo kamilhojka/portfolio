@@ -16,7 +16,7 @@ export function Experience() {
           <span className="text-lg">Łęka Opatowska</span>
         </div>
         <p className="text-lg text-justify text-muted-foreground">
-          Build desktop applications using C#, XAML, and Python, as well as
+          Build desktop applications using C#, .NET, and Python, as well as
           developing web applications with React. Autonomously manage a
           warehouse infrastructure with a capacity of approximately 200,000
           packages. Connect and automate processes between the ERP system -
@@ -30,6 +30,7 @@ export function Experience() {
           <Badge variant="outline">React</Badge>
           <Badge variant="outline">Javascript</Badge>
           <Badge variant="outline">C#</Badge>
+          <Badge variant="outline">.NET</Badge>
           <Badge variant="outline">XAML</Badge>
           <Badge variant="outline">Python</Badge>
           <Badge variant="outline">SQL Server</Badge>
