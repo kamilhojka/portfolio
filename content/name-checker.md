@@ -4,7 +4,7 @@ slug: "name-checker"
 title: "name-checker"
 purpose: "Personal"
 purposeContent: "This is for personal purposes"
-technologies: ["Next.js", "React", "TailwindCSS", "Radix"]
+technologies: ["Next.js", "React", "Radix UI", "Tailwind CSS", "shadcn/ui"]
 liveUrl: "https://name-checker.kamilhojka.com/"
 githubUrl: "https://github.com/kamilhojka/name-checker"
 image: "/assets/content/name-checker/image.png"
