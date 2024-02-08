@@ -10,6 +10,7 @@ import { ThemeProvider } from "@/components/common/theme-provider";
 import { Nav } from "@/components/common/nav";
 import { Noise } from "@/components/common/noise";
 import { SmoothScroller } from "@/components/common/smooth-scroller";
+import { CustomCursor } from "@/components/common/custom-cursor";
 
 export const metadata: Metadata = {
   title: {
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <SmoothScroller>
             <Noise />
+            <CustomCursor />
             <div className="container relative min-h-screen flex flex-col w-full">
               <Nav />
               {children}
