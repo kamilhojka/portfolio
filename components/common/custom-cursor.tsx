@@ -27,7 +27,7 @@ export function CustomCursor() {
   return (
     <div
       className={cn(
-        "fixed top-0 left-0 rounded-full mix-blend-difference pointer-events-none -translate-x-1/2 -translate-y-1/2 z-[999] p-[10px] flex justify-center items-center bg-primary backdrop-blur-[1px] transition-[padding]",
+        "hidden sm:flex fixed top-0 left-0 rounded-full mix-blend-difference pointer-events-none -translate-x-1/2 -translate-y-1/2 z-[999] p-[10px] justify-center items-center bg-primary backdrop-blur-[1px] transition-[padding]",
         isPointer ? "p-[30px]" : ""
       )}
       style={{
