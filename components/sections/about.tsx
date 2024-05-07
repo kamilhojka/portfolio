@@ -16,7 +16,7 @@ export function About() {
             flow of enterprise life.
           </h3>
           <p className="text-muted-foreground">
-            For 3.5 years I have been working as a freelancer/independent person
+            For 4 years I have been working as a freelancer/independent person
             responsible for software for warehouse management, finances and
             other ERP processes in one of the companies in my city. Thanks to
             this, I gained extensive experience and skills that I will be happy
